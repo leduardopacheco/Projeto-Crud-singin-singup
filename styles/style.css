@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: lightgray;
+}
+.left{
+    display: flex;
+    width: 55%;
+    height: 100vh;
+    background-color: #F8FAFC;
+    justify-content: center;  
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    width: 45%;
+    background-color: #1E3F7F;
+}
+
+.login{
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #ffff;
+}
+
+.div-logo{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+}
+
+.formulario{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-usuario{
+    display: flex;
+    /* border:1px solid red; */
+    flex-direction: column;
+    width: 80%;
+}
+
+.input-senha{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.input-user{
+    display: flex;
+    border-radius: 10px;
+    padding: 4px;
+    border:1px solid gray;
+}
+
+.input-pass{
+    display: flex;
+    border-radius: 10px;
+    padding: 4px;
+    border:1px solid gray;
+}
+
+.div-button{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.btn{
+    padding: 6px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1E3F7F;
+    color: white;
+    font-weight: bold;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 4px;
+}
+.link{
+    text-decoration: none;
+    color: #F5A706;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos{
+    width: 95%;
+}
