@@ -14,7 +14,10 @@
         <div class="header">
             <span>Cadastro de Produto</span>
             <img class="logo-home" src="../imagens/tijuca-2.png" alt="Logo">
-            <button onclick="openModal()" id="new">Incluir</i></button>
+            <div class="div-buttons">
+                <button onclick="openModal()" id="new">Adicionar</i></button>
+                <a class="sair" href="../pages/index.html">Sair</a>
+            </div>
         </div>
 
         <div class="divTable">
@@ -41,7 +44,6 @@
 
                     <label for="m-quantidade">Quantidade</label>
                     <input id="m-quantidade" type="text" required />
-                    
 
                     <label for="m-preço">Preço</label>
                     <input id="m-preço" type="number" required />
@@ -49,9 +51,7 @@
                 </form>
             </div>
         </div>
-
     </div>
-
     <script src="../js/home.js"></script>
 </body>
 

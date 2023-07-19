@@ -25,6 +25,7 @@ button {
     height: 80%;
     border-radius: 10px;
     background: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .header {
@@ -40,6 +41,16 @@ button {
     font-weight: 900;
     font-size: 20px;
     word-break: break-all;
+}
+
+.header a{
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #F5A706;
+    text-decoration: none;
 }
 
 #new {
@@ -190,7 +201,7 @@ tbody tr td.acao {
     padding: 5px 10px;
     width: 100%;
     border: none;
-    background-color: rgb(57, 57, 226);
+    background-color: #1E3F7F;
     color: white;
 }
 

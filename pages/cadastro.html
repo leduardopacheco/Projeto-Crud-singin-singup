@@ -20,12 +20,12 @@
                 <div class="formulario">
                     <h1>Cadastre-se</h1>
 
-                    <div class="input-usuario">
-                        <label id="userLabel" for="usuario">Nome Completo:</label>
-                        <input class="input-user" type="text" id="usuario" paceholder="" required />
+                    <div class="input-nome">
+                        <label id="nomeLabel" for="nome">Nome:</label>
+                        <input class="input-user" type="text" id="name" paceholder="" required />
                     </div>
                     <div class="input-usuario">
-                        <label id="userLabel" for="usuario">Email:</label>
+                        <label id="userLabel" for="usuario">Usuário:</label>
                         <input class="input-user" type="text" id="usuario" paceholder="" required />
                     </div>
 
@@ -35,12 +35,11 @@
                         <i class="fa fa-eye" aria-hidden="true"></i>
                     </div>
                     <div class="input-senha">
-                        <label id="senhaLabel" for="senha">Confirmar Senha:</label>
-                        <input class="input-pass" type="password" id="senha" paceholder="" required />
-                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha:</label>
+                        <input class="input-pass" type="password" id="confirmSenha" paceholder="" required />
                     </div>
                     <div class="div-button">
-                        <button class="btn">Enviar</button>
+                        <button onclick="cadastrarUsuario()" class="btn">Enviar</button>
                     </div>
                 </div>
                 
@@ -56,6 +55,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>
