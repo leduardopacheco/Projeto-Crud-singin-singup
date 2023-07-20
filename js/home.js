@@ -1,3 +1,6 @@
+var arrayUser = localStorage.getItem("usuarios") == "null" ? [] : JSON.parse(localStorage.getItem('usuarios'))
+console.log(arrayUser, 'salvou')
+
 const modal = document.querySelector('.modal-container')
 const tbody = document.querySelector('tbody')
 const sNome = document.querySelector('#m-nome')
@@ -7,6 +10,73 @@ const btnSalvar = document.querySelector('#btnSalvar')
 
 let itens
 let id
+
+function login() {
+    try {
+        let validar = false
+        var user = document.getElementById("usuario").value
+        var senha = document.getElementById("senha").value
+
+
+        for (let i = 0; i < arrayUser.length; i++) {
+            var userSalvo = arrayUser[i].usuario
+
+            var senhaSalva = arrayUser[i].senha
+
+            if (user == userSalvo && senha == senhaSalva) {
+                validar = true;
+            }
+            
+        }
+
+        if (validar) {
+            setTimeout(() => {
+                window.location.href = "../pages/home.html";
+            }, 500);
+            alert("Usuário logado com sucesso!")
+        }else{
+            alert("Usuario não existe")
+            return
+        }
+
+
+    } catch (error) {
+        console.log("esse erro: ", error)
+    }
+}
+
+function cadastrarUsuario() {
+    try {
+        var name = document.getElementById("name").value
+        var usuario = document.getElementById("usuario").value
+        var senha = document.getElementById("senha").value
+        var confirmsenha = document.getElementById("confirmSenha").value
+
+        if (senha != confirmsenha) {
+            alert("As senhas devem ser iguais!")
+            return
+        }
+
+        var objeto = {
+            "nome": name,
+            "usuario": usuario,
+            "senha": senha,
+            "confirmSenha": confirmsenha,
+        }
+
+        arrayUser.push(objeto)
+
+        localStorage.setItem("usuarios", JSON.stringify(arrayUser))
+
+
+        setTimeout(() => {
+            window.location.href = "../pages/index.html";
+        }, 800);
+
+    } catch (error) {
+        console.log('erro: ', error)
+    }
+}
 
 function openModal(edit = false, index = 0) {
     modal.classList.add('active')
