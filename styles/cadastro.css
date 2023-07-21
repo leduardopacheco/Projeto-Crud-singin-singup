@@ -135,5 +135,17 @@
 }
 
 .produtos{
-    width: 585px;
+    width: 35rem;
+}
+
+@media(max-width: 650px){
+    .left{
+        width: 100%;
+    }
+    .login{
+        width: 80%;
+    }
+    .right{
+        display: none;
+    }
 }
