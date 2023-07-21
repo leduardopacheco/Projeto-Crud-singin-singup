@@ -70,7 +70,7 @@ function cadastrarUsuario() {
 
 
         setTimeout(() => {
-            window.location.href = "../pages/index.html";
+            window.location.href = "index.html";
         }, 800);
 
     } catch (error) {
