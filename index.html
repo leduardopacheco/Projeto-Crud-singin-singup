@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="../styles/cadastro.css">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>
@@ -18,41 +18,30 @@
                     <p>SISTEMA PEDIDOS</p>
                 </div>
                 <div class="formulario">
-                    <h1>Cadastre-se</h1>
+                    <h1>Entrar</h1>
 
-                    <div class="input-nome">
-                        <label id="nomeLabel" for="nome">Nome:</label>
-                        <input class="input-user" type="text" id="name" paceholder="" required />
-                    </div>
                     <div class="input-usuario">
-                        <label id="userLabel" for="usuario">Usuário:</label>
+                        <label id="userLabel" for="usuario">Usuario:</label>
                         <input class="input-user" type="text" id="usuario" paceholder="" required />
                     </div>
- 
+
                     <div class="input-senha">
                         <label id="senhaLabel" for="senha">Senha:</label>
                         <input class="input-pass" type="password" id="senha" paceholder="" required />
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                    <div class="input-senha">
-                        <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha:</label>
-                        <input class="input-pass" type="password" id="confirmSenha" paceholder="" required />
                     </div>
                     <div class="div-button">
-                        <button onclick="cadastrarUsuario()" class="btn">Cadastrar</button>
+                        <button onclick="login()" class="btn">Enviar</button>
                     </div>
                 </div>
                 
                 <div class="cadastro">
-                    <p>Já tem conta?</p>
-                    <a href="../pages/index.html" class="link">Entrar</a>
+                    <p>Não é cadastrado?</p>
+                    <a href="./cadastro.html" class="link">Cadastre-se</a>
                 </div>
             </div>
         </div>
         <div class="right">
-            <div class="right">
-                <img class="produtos" src="../imagens/produtos.png" alt="Produtos">
-            </div>
+            <img class="produtos" src="../imagens/produtos.png" alt="Produtos">
         </div>
     </div>
     <script src="../js/home.js"></script>
