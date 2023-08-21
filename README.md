@@ -1,4 +1,4 @@
-* Projeto-Crud-singin-singup
+* Projeto Crud, com tela de cadastro e entrar.
 
 * Link para acesso do CADASTRO/ENTRAR: https://leduardopacheco.github.io/Projeto-Crud-singin-singup/cadastro.html
 
